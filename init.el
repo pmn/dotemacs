@@ -35,8 +35,6 @@
 (add-to-list 'load-path "~/.emacs.d/color-theme/themes")
 (add-to-list 'load-path "~/.emacs.d/utils/")
 
-;; pathfix
-(load "pathfix")
 
 ;;; LANGUAGE SUPPORT
 (require 'auto-complete-config)
@@ -77,3 +75,6 @@
 (require 'color-theme-tango)
 (color-theme-initialize)
 (color-theme-tango)
+
+;; pathfix
+(load "pathfix")
