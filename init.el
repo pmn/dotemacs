@@ -35,7 +35,6 @@
 (add-to-list 'load-path "~/.emacs.d/color-theme/themes")
 (add-to-list 'load-path "~/.emacs.d/utils/")
 
-
 ;;; LANGUAGE SUPPORT
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
@@ -52,8 +51,8 @@
 
 ;; Clojure
 (require 'clojure-mode)
-(require 'rainbow-delimiters)
 (setq-default frame-background-mode 'dark)
+(require 'rainbow-delimiters)
 (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
 
 ;; Erlang
@@ -69,6 +68,7 @@
 (require 'scala-mode-auto)
 (require 'ensime)
 (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
+
 
 ;;; COLOR THEMES
 (require 'color-theme)
