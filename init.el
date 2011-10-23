@@ -27,10 +27,7 @@
 (add-to-list 'load-path "~/.emacs.d/modes/")
 (add-to-list 'load-path "~/.emacs.d/modes/clojure-mode")
 (add-to-list 'load-path "~/.emacs.d/modes/coffee-mode")
-(add-to-list 'load-path "~/.emacs.d/modes/ensime/src/main/elisp")
-(add-to-list 'load-path "~/.emacs.d/modes/erlang")
 (add-to-list 'load-path "~/.emacs.d/modes/go-mode")
-(add-to-list 'load-path "~/.emacs.d/modes/scala")
 (add-to-list 'load-path "~/.emacs.d/color-theme/")
 (add-to-list 'load-path "~/.emacs.d/color-theme/themes")
 (add-to-list 'load-path "~/.emacs.d/utils/")
@@ -55,20 +52,11 @@
 (require 'rainbow-delimiters)
 (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
 
-;; Erlang
-(require 'erlang)
-
 ;; Go
 (require 'go-mode)
 
 ;; JS
 (autoload 'espresso-mode "espresso")
-
-;; Scala
-(require 'scala-mode-auto)
-(require 'ensime)
-(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
-
 
 ;;; COLOR THEMES
 (require 'color-theme)
