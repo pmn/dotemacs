@@ -54,6 +54,7 @@
 (setq-default frame-background-mode 'dark)
 (require 'rainbow-delimiters)
 (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
+(add-to-list 'auto-mode-alist '("\.cljs$" . clojure-mode))
 
 ;; Go
 (require 'go-mode)
