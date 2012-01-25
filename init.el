@@ -34,6 +34,9 @@
 (add-to-list 'load-path "~/.emacs.d/color-theme/")
 (add-to-list 'load-path "~/.emacs.d/color-theme/themes")
 (add-to-list 'load-path "~/.emacs.d/utils/")
+(add-to-list 'load-path "~/.emacs.d/utils/utils")
+
+(load "utils")
 
 ;;; LANGUAGE SUPPORT
 (require 'auto-complete-config)
